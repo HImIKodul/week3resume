@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resume — Dulguun Munkhtur</title>
+  <style>
+    :root{--accent:#0f62fe;--muted:#6b7280;--card:#ffffff}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    body{background:#f3f4f6;color:#111827;display:flex;align-items:center;justify-content:center;padding:32px}
+    body {
+      background:#f3f4f6;
+      color:#111827;
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+
+    .sheet {
+      width:100%;
+      max-width:none;
+      min-height:100vh;
+      background:#fff;
+      display:grid;
+      grid-template-columns:1fr 320px;
+    }
+
+    header {
+      position:sticky; /* stays visible */
+      top:0;
+      background:#fff;
+      padding:20px 32px;
+      border-bottom:1px solid #eef2f7;
+      z-index:10;
+    }
+    .sheet{width:900px;max-width:100%;background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);box-shadow:0 10px 30px rgba(2,6,23,0.08);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 320px}
+    header{padding:28px 32px;border-bottom:1px solid #eef2f7;grid-column:1/-1;display:flex;align-items:center;justify-content:space-between}
+    .name{font-size:22px;font-weight:700}
+    .title{font-size:14px;color:var(--muted)}
+    .main{padding:28px 32px}
+    .sidebar{background:#f8fafc;padding:28px 24px;border-left:1px solid #eef2f7}
+    h2{margin:0 0 12px 0;font-size:14px;color:#0b1220}
+    p.lead{margin:0;color:var(--muted);line-height:1.5}
+    .section{margin-bottom:20px}
+    .job{margin-bottom:14px}
+    .job h3{margin:0;font-size:15px}
+    .job .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    ul.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:#eef2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px}
+    .contact-list{list-style:none;padding:0;margin:0;font-size:14px;color:var(--muted)}
+    .contact-list li{margin-bottom:10px}
+    .progress{height:8px;background:#e6eefc;border-radius:999px;overflow:hidden}
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#5dd0ff)}
+    .btn-print{background:transparent;border:1px solid #e6eefc;padding:8px 10px;border-radius:8px;cursor:pointer;font-size:13px}
+    /* Responsive */
+    @media (max-width:880px){.sheet{grid-template-columns:1fr;}.sidebar{border-left:none;border-top:1px solid #eef2f7}}
+    /* Small notes to help you edit */
+    .note{font-size:12px;color:#6b7280;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="sheet" id="resume">
+    <header>
+      <div>
+        <div class="name">Dulguun Munkhtur</div>
+        <div class="title">Software Developer • Data Enthusiast</div>
+      </div>
+      <div style="text-align:right">
+        <button class="btn-print" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </header>
+
+    <main class="main">
+      
+
+      <section class="section">
+        <h2>Work Experience</h2>
+        <article class="job">
+          <h3>Data Analyst — <span style="font-weight:600">MIG Insurance</span></h3>
+          <div class="meta">Ulaanbaatar, Mongolia · Jan 2025 — Present</div>
+          <ul>
+            <li>We are using modern frameworks to clean and process data, and we also utilize APIs for data integration.</li>
+            <li>Designed and optimized SQL queries and database schemas to improve performance by 10%.</li>
+            <li>Automated analysting for reduce release friction and bugs.</li>
+          </ul>
+        </article>
+
+      <section class="section">
+        <h2>Projects</h2>
+        <div class="job">
+          <h3>Automated Reels Generator</h3>
+          <div class="meta">Personal Project</div>
+          <p>Create and edit short-form videos (Reels/Shorts) automatically using scripts — includes video trimming, captions, and batch uploading. <span class="note">(You mentioned interest in automating Reels/Shorts.)</span></p>
+        </div>
+
+        <div class="job">
+          <h3>Database Management Tool</h3>
+          <div class="meta">Open-source / Personal</div>
+          <p>Small tool to create SQL schemas, handle relationships, and export ER diagrams.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="job">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <div class="meta">University of Finance & Economics · 2022 — 2025</div>
+          <p class="note">(Bachelor's degree)</p>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="sidebar">
+      <section class="section">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>Email: <strong>dulguun12345678901@gmail.com</strong></li>
+          <li>Phone: <strong>+886 098 986 9054</strong></li>
+          <li>Location: <strong>Taiwan</strong></li>
+          <li>Website / GitHub: <strong>https://github.com/HImIKodul</strong></li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>Java</li>
+          <li>SQL</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Languages</h2>
+        <p class="meta">Mongolian — Native</p>
+        <p class="meta">English — Intermediate</p>
+      </section>
+
+      <section class="section">
+        <h2>Education / Certificates</h2>
+        <p class="meta">Online courses: Databases, Algorithms, Cloud Fundamentals</p>
+      </section>
+
+      <section class="section">
+        <h2>Profile Strength</h2>
+        <div class="progress" title="Overall strength">
+          <i style="width:72%"></i>
+        </div>
+        <p class="note">Adjust strengths to reflect your real experience.</p>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <script>
+    // Quick helper: press 'E' to edit contact placeholders inline for a fast preview
+    document.addEventListener('keydown', (e) => {
+      if(e.key.toLowerCase() === 'e'){
+        const el = document.querySelector('.contact-list');
+        el.contentEditable = el.contentEditable === 'true' ? 'false' : 'true';
+        el.style.outline = el.contentEditable === 'true' ? '2px dashed #cfe8ff' : 'none';
+      }
+    });
+  </script>
+</body>
+</html>
