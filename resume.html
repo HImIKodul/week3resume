@@ -35,6 +35,8 @@
     .sheet{width:900px;max-width:100%;background:linear-gradient(180deg,#ffffff 0%,#fbfdff 100%);box-shadow:0 10px 30px rgba(2,6,23,0.08);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 320px}
     header{padding:28px 32px;border-bottom:1px solid #eef2f7;grid-column:1/-1;display:flex;align-items:center;justify-content:space-between}
     .name{font-size:22px;font-weight:700}
+  .header-left{display:flex;align-items:center;gap:16px}
+  .avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid rgba(15,98,254,0.12)}
     .title{font-size:14px;color:var(--muted)}
     .main{padding:28px 32px}
     .sidebar{background:#f8fafc;padding:28px 24px;border-left:1px solid #eef2f7}
@@ -60,9 +62,13 @@
 <body>
   <div class="sheet" id="resume">
     <header>
-      <div>
-        <div class="name">Dulguun Munkhtur</div>
-        <div class="title">Software Developer • Data Enthusiast</div>
+      <div class="header-left">
+        <!-- Replace the src with a local filename like "photo.jpg" placed in the same folder, or an absolute/remote URL -->
+        <img class="avatar" src="1.jpg" alt="Dulguun Munkhtur" />
+        <div>
+          <div class="name">Dulguun Munkhtur</div>
+          <div class="title">Software Developer • Data Enthusiast</div>
+        </div>
       </div>
       <div style="text-align:right">
         <button class="btn-print" onclick="window.print()">Print / Save as PDF</button>
@@ -114,6 +120,8 @@
       <section class="section">
         <h2>Contact</h2>
         <ul class="contact-list">
+          
+          <li>Student_ID: <strong>114021153</strong></li>
           <li>Email: <strong>dulguun12345678901@gmail.com</strong></li>
           <li>Phone: <strong>+886 098 986 9054</strong></li>
           <li>Location: <strong>Taiwan</strong></li>
